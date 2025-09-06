@@ -1,0 +1,40 @@
+﻿🪟 **Skapa landningssidan (Home)**
+
+Skapa en startsida som välkomnar besökaren och presenterar din restaurang:
+
+- [ ]  En kort introduktion om restaurangen, kaféet eller bageriet – exempelvis koncept, känsla eller specialitet.
+- [ ]  Visa några av de mest populära rätterna/dryckerna från menyn, inklusive bilder om `BildUrl` finns.
+- [ ]  Länkar till övriga sidor som **Menyn** och **Bokning**.
+
+📜 **Utveckla menysidan**
+
+Skapa en sida där besökare kan se hela menyn:
+
+- [ ]  Hämta och visa dynamiskt alla rätter från API:et, inklusive **namn, pris, beskrivning** och eventuell bild (`BildUrl`).
+- [ ]  Menysidan ska presenteras på ett tydligt och attraktivt sätt, anpassat till ditt tema.
+
+🖥️ **Administratörsgränssnitt**
+
+Skapa ett administratörsgränssnitt för att hantera restaurangens data:
+
+- [ ]  Skapa vyer där administratörer kan se och hantera alla bokningar med CRUD-operationer.
+- [ ]  Implementera funktioner för att lägga till, uppdatera och ta bort rätter från menyn.
+- [ ]  Skapa vyer där administratörer kan hantera bord.
+
+🔒 **Autentisering mot API**
+
+- [ ]  Lägg till administratörsinloggning i MVC som använder JWT från APIet.
+- [ ]  MVC‑applikationen ska skicka med JWT som erhålls vid inloggning när den anropar de skyddade endpoints i API:et.
+- [ ]  Om JWT saknas eller är ogiltig ska administratörssidorna inte vara åtkomliga.
+
+✅ **SEO-optimering**
+
+För att förbättra webbplatsens synlighet och prestanda, genomför följande:
+- [ ]  Implementera grundläggande SEO-optimering på landningssidan och menysidan. Detta inkluderar optimerade meta-taggar, en tydlig URL-struktur, och optimering av bilder för att säkerställa snabb laddningstid.
+
+🎨 **Grundläggande UI/UX**
+
+Skapa ett enkelt och användarvänligt gränssnitt:
+- [ ]  Använd **Bootstrap** eller liknande CSS‑ramverk för en **responsiv design** som fungerar på både dator och mobil.
+- [ ]  Utseendet ska kännas enhetligt och spegla restaurangens koncept.
+- [ ]  Sidan ska vara responsiv och anpassad för både desktop och mobil.
