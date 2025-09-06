@@ -29,6 +29,12 @@ namespace ResturantMVC.Controllers
             return View(menuItems);
         }
 
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
         [HttpPost]
         public async Task<IActionResult> Create(CreateMenuItemVM newItem)
         {
