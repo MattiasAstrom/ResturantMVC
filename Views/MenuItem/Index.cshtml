@@ -1,0 +1,33 @@
+﻿@model List<MenuItem>
+
+<h3>Filmer</h3>
+
+<a asp-action="Create">Create</a>
+
+@if (!Model.Any())
+{
+	<div>
+		<p>No menu items were found!</p>
+	</div>
+}
+else
+{
+	if (TempData["SuccessMessage"] != null)
+	{
+		<div class="alert alert-success">
+			@TempData["SuccessMessage"]
+		</div>
+	}
+	<ul>
+		@foreach (var item in Model)
+		{
+			<li>
+				<h4>@item.Name</h4>
+				<img src="@item.ImageUrl" alt="Image of @item.Name" />
+				<span>@item.Price</span>
+				<span>@item.Description</span>
+				<a asp-action="Details" asp-route-id="@item.Description">Details</a>
+			</li>
+		}
+	</ul>
+}

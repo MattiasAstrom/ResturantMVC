@@ -10,6 +10,10 @@ namespace ResturantMVC
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
+            builder.Services.AddHttpClient("ResturantAPI", client =>
+            {
+                client.BaseAddress = new Uri("https://localhost:5000/api/");
+            });
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
